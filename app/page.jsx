@@ -17,6 +17,7 @@ const page = () => {
   return (
     <div>
       <h1 className='my-color'>Home</h1>
+      <p>Client Side Rendering - CSR</p>
       {
         data.map((item, index) => {
           return <div key={index}>

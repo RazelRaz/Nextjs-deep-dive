@@ -11,6 +11,7 @@ const page = async () => {
     return (
         <div>
             <h1 className='my-color'>Product Page</h1>
+            <p>Server Side Rendering - SSR</p>
             {
                 data.map((item, key) => {
                     return <div key={key}>
