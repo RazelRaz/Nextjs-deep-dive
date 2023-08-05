@@ -6,7 +6,7 @@ async function getData(){
     return json['products']
 }
 
-const page = async () => {
+const page = async ({searchParams}) => {
 
     let data = await getData()
 
@@ -14,6 +14,9 @@ const page = async () => {
         <div>
             <Menu></Menu>
             <h1 className='my-color'>Product Page</h1>
+            <p>{searchParams.name} <span>$ {searchParams.price}</span></p>
+
+
             <p>Server Side Rendering - SSR</p>
             {
                 data.map((item, key) => {
