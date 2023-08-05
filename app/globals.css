@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
 }
+
+.active {
+  color:pink !important;
+}
+
 .my-color {
   color: red;
 }
@@ -31,4 +36,6 @@
   display: inline;
   margin: 0 10px;
   cursor: pointer;
+  text-decoration: none;
+  list-style: none;
 }

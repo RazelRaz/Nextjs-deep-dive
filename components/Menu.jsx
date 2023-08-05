@@ -1,20 +1,26 @@
 
+'use client'
+
 import Link from 'next/link';
 import React from 'react';
+import { usePathname } from 'next/navigation'
 
 const Menu = () => {
+
+    let currentPath = usePathname();
+
     return (
         <div className='mainmenu'>
             <div className='logo'>
                 <h1>Logo</h1>
             </div>
             <ul>
-                <Link href={"/"}>Home</Link>
-                <Link href={"/about"}>About</Link>
-                <Link href={"/product"}>Product</Link>
-                <Link href={"/blog"}>Blog</Link>
-                <Link href={"/contact"}>Contact</Link>
-                <Link href={"/profile"}>Profile</Link>
+                <Link className={currentPath === '/' ? 'active' : ''} href={"/"}>Home</Link>
+                <Link className={currentPath === '/about' ? 'active' : ''} href={"/about"}>About</Link>
+                <Link className={currentPath === '/product' ? 'active' : ''} href={"/product"}>Product</Link>
+                <Link className={currentPath === '/blog' ? 'active' : ''} href={"/blog"}>Blog</Link>
+                <Link className={currentPath === '/contact' ? 'active' : ''} href={"/contact"}>Contact</Link>
+                <Link className={currentPath === '/profile' ? 'active' : ''} href={"/profile"}>Profile</Link>
             </ul>
         </div>
     );
