@@ -1,4 +1,5 @@
 'use client'
+import Menu from '@/components/Menu';
 import React, { useEffect, useState } from 'react';
 
 const page = () => {
@@ -16,6 +17,7 @@ const page = () => {
 
   return (
     <div>
+      <Menu></Menu>
       <h1 className='my-color'>Home</h1>
       <p>Client Side Rendering - CSR</p>
       {
