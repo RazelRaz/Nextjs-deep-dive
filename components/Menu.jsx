@@ -16,7 +16,10 @@ const Menu = () => {
             </div>
             <ul>
                 <Link className={currentPath === '/' ? 'active' : ''} href={"/"}>Home</Link>
-                <Link className={currentPath === '/about' ? 'active' : ''} href={"/about"}>About</Link>
+                <Link className={currentPath === '/about' ? 'active' : ''} 
+                href={"/about"}>
+                    About
+                </Link>
 
                 <Link className={currentPath === '/product' ? 'active' : ''} 
                 href={{pathname:'/product', query:{name:'book', price:'$1234'}}}>
