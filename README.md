@@ -46,3 +46,4 @@ This project is licensed under the [MIT License](LICENSE), allowing you to use, 
 If you have any questions or need support, feel free to reach out to us. We hope you enjoy exploring the Next.js Deep Dive App and find it helpful for your own projects!
 
 [razel16dcm@gmail.com]
+
