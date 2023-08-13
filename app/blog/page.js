@@ -1,4 +1,5 @@
 import getAllPosts from "@/lib/getAllPosts";
+import Link from "next/link";
 
 export default async function Blog(){
     
@@ -10,7 +11,7 @@ export default async function Blog(){
             {
                 posts.map(post => {
                     return (
-                        <h2 key={post.id}> {post.title} </h2>
+                        <h2 key={post.id}> <Link href={`/blog/${post.id}`}>{post.title}</Link>  </h2>
                     )
                 })
             }
