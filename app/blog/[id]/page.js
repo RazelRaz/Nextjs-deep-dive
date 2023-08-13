@@ -10,6 +10,9 @@ export default async function SingleBlog({params}){
     // request in parallel
     const [post, comments] = await Promise.all([postpromise, commentspromise]);
 
+    //incremental Data fetching
+    
+
     return (
         <div>
             <h6>{post.title}</h6>
