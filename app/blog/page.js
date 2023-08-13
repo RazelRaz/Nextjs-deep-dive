@@ -7,7 +7,7 @@ export default async function Blog(){
 
     return (
         <div>
-            <h1>Blog Page - Server side rendering</h1>
+            <h1>Blog Page - Server site rendering</h1>
             {
                 posts.map(post => {
                     return (
