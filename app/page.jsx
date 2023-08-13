@@ -18,7 +18,7 @@ const page = () => {
 
   return (
     <div>
-      <Menu></Menu>
+
       <h1 className='my-color'>Home</h1>
       <p>Client Side Rendering - CSR</p>
       {

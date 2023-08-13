@@ -12,7 +12,7 @@ const page = async ({searchParams}) => {
 
     return (
         <div>
-            <Menu></Menu>
+       
             <h1 className='my-color'>Product Page</h1>
             <p>{searchParams.name} <span>$ {searchParams.price}</span></p>
 
