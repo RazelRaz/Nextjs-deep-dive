@@ -1,15 +1,20 @@
-import Menu from '@/components/Menu';
-import React from 'react';
+import getAllPosts from "@/lib/getAllPosts";
 
-const page = () => {
+export default async function Blog(){
+    
+    const posts = await getAllPosts();
+
     return (
         <div>
-            
-            <h1>Blog Page</h1>
-            <img src='images/ssr-and-csr.png' alt='image' />
-            
+            <h1>Blog Page - Server side rendering</h1>
+            {
+                posts.map(post => {
+                    return (
+                        <h2 key={post.id}> {post.title} </h2>
+                    )
+                })
+            }
         </div>
-    );
-};
 
-export default page;
+    );
+}

@@ -27,3 +27,10 @@ The app provides a consistent and user-friendly layout with a progress bar imple
 
 [for better redability visid my git repo, where i wrote details about my app in readme.Md ]
 
+
+extra notes:
+> Learnt prefetch.  By Default its false we can make it true [prefetch={true}]
+> added directory layout / product page has a different layout.
+> Dashboard page.
+
+

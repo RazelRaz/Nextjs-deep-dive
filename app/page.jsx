@@ -1,5 +1,5 @@
 'use client'
-import Menu from '@/components/Menu';
+
 import React, { useEffect, useState } from 'react';
 
 const page = () => {
